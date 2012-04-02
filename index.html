@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>lcov to Cobertura XML Converter by eriwen</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>lcov to Cobertura XML Converter</h1>
+        <p>Converts lcov line coverage output to Cobertura-compatible XML for continuous integration</p>
+        <p class="view"><a href="https://github.com/eriwen/lcov-to-cobertura-xml">View the Project on GitHub <small>eriwen/lcov-to-cobertura-xml</small></a></p>
+        <ul>
+          <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This project does as the name implies: it coverts code coverage report files in <a href="http://ltp.sourceforge.net/coverage/lcov.php">lcov</a> format to <a href="http://cobertura.sourceforge.net/">Cobertura</a>'s XML report format so that CI servers like <a href="http://jenkins-ci.org">Jenkins</a> can aggregate results and determine build stability etc.</p>
+
+<h2>Usage</h2>
+
+<pre><code>python lcov-to-cobertura-xml.py lcov-file.dat
+</code></pre>
+
+<ul>
+<li>
+<code>-b/--base-dir</code> - (Optional) Directory where source files are located. Defaults to the current directory</li>
+<li>
+<code>-e/--excludes</code> - (Optional) Comma-separated list of regexes of packages to exclude</li>
+<li>
+<code>-o/--output</code> - (Optional) Path to store cobertura xml file. Defaults to ./coverage.xml</li>
+</ul><h2>Caveats</h2>
+
+<p>This was originally intended to convert <a href="http://code.google.com/p/js-test-driver/">JsTestDriver</a> coverage results, so it may not work properly with all LCOV constructs. If you have any problems or suggestions, feel free to <a href="https://github.com/eriwen/lcov-to-cobertura-xml/issues">file an issue</a> and it'll be addressed</p>
+
+<h2>License</h2>
+
+<p>This project is provided under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/eriwen">eriwen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
