@@ -20,12 +20,14 @@
 
         <p class="view"><a href="https://github.com/eriwen/lcov-to-cobertura-xml">View the Project on GitHub <small>eriwen/lcov-to-cobertura-xml</small></a></p>
 
-
         <ul>
           <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml">View On <strong>GitHub</strong></a></li>
         </ul>
+
+        <p><a href="https://twitter.com/eriwen" class="twitter-follow-button" data-show-count="false">Follow @eriwen</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
       </header>
       <section>
         <p>This project does as the name implies: it coverts code coverage report 
@@ -49,7 +51,7 @@ determine build stability etc.</p>
 <li>
 <code>-o/--output</code> - (Optional) Path to store cobertura xml file. <em>Defaults to ./coverage.xml</em>
 </li>
-</ul><div class="highlight"><pre>python lcov_cobertura.py lcov-file.dat --base-dir src/dir -excludes test.lib -output output/cobertura.xml
+</ul><div class="highlight"><pre>python lcov_cobertura.py lcov-file.dat -b src/dir -e test.lib -o out.xml
 </pre></div>
 
 <h2>Usage as a Python module</h2>
@@ -59,12 +61,7 @@ determine build stability etc.</p>
 <div class="highlight"><pre>sudo easy_install lcov_cobertura
 </pre></div>
 
-<p>Then just use it in your terminal:</p>
-
-<div class="highlight"><pre>python -m lcov_cobertura lcov-file.dat
-</pre></div>
-
-<p>OR anywhere in your python:</p>
+<p>Then just use it anywhere in your python:</p>
 
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">lcov_cobertura</span> <span class="kn">import</span> <span class="n">LcovCobertura</span>
 
