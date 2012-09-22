@@ -22,19 +22,16 @@
 
         <ul>
           <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/downloads/eriwen/lcov-to-cobertura-xml/lcov_cobertura-1.1.tar.gz">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/eriwen/lcov-to-cobertura-xml">View On <strong>GitHub</strong></a></li>
         </ul>
 
         <p><a href="https://twitter.com/eriwen" class="twitter-follow-button" data-show-count="false">Follow @eriwen</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+        <p><a href="http://coderwall.com/eriwen"><img alt="Endorse eriwen on Coderwall" src="http://api.coderwall.com/eriwen/endorsecount.png" /></a></p>
       </header>
       <section>
-        <p>This project does as the name implies: it coverts code coverage report 
-files in <a href="http://ltp.sourceforge.net/coverage/lcov.php">lcov</a> format to
-<a href="http://cobertura.sourceforge.net/">Cobertura</a>'s XML report format so that
-CI servers like <a href="http://jenkins-ci.org">Jenkins</a> can aggregate results and 
-determine build stability etc.</p>
+        <p>This project does as the name implies: it coverts code coverage report files in <a href="http://ltp.sourceforge.net/coverage/lcov.php">lcov</a> format to <a href="http://cobertura.sourceforge.net/">Cobertura</a>'s XML report format so that CI servers like <a href="http://jenkins-ci.org">Jenkins</a> can aggregate results and determine build stability etc.</p>
 
 <h2>Quick command-line usage</h2>
 
@@ -51,14 +48,14 @@ determine build stability etc.</p>
 <li>
 <code>-o/--output</code> - (Optional) Path to store cobertura xml file. <em>Defaults to ./coverage.xml</em>
 </li>
-</ul><div class="highlight"><pre>python lcov_cobertura.py lcov-file.dat -b src/dir -e test.lib -o out.xml
+</ul><div class="highlight"><pre>python lcov_cobertura.py lcov.dat -b src/dir -e tests -o out.xml
 </pre></div>
 
-<h2>Usage as a Python module</h2>
+<h2>Usage with Python 2 or 3</h2>
 
-<p>You can install lcov_cobertura with <a href="http://peak.telecommunity.com/DevCenter/EasyInstall">easy_install</a>:</p>
+<p>You can install lcov_cobertura with <a href="http://pypi.python.org/pypi/pip">pip</a>:</p>
 
-<div class="highlight"><pre>sudo easy_install lcov_cobertura
+<div class="highlight"><pre>pip install lcov_cobertura
 </pre></div>
 
 <p>Then just use it anywhere in your python:</p>
@@ -81,6 +78,18 @@ determine build stability etc.</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34997412-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </body>
 </html>
