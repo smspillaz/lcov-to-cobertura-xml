@@ -1,5 +1,7 @@
 .idea
 dist
 doc/html
+doc/_build
 *.pyc
+build
 
