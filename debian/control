@@ -1,0 +1,16 @@
+Source: lcov-cobertura
+Maintainer: Eric Wendelin <me@eriwen.com>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.4
+
+Package: python-lcov-cobertura
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: LCOV to Cobertura XML converter
+ Converts code coverage report files in lcov format to Cobertura's XML
+ report format so that CI servers like Jenkins can aggregate results and
+ determine build stability etc.
+
+
